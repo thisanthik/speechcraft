@@ -58,12 +58,16 @@
             font-weight: bold;
             color: red;
         }
+        .instruction {
+            color: blue;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🎬 Altrium Speechcraft Program 🎥</h1>
-        <p>Click on an image to reveal your topic:</p>
+        <p class="instruction">Click on an image to reveal your topic:</p>
         <div class="grid">
             <div class="image-container">
                 <span class="image-number">1</span>
@@ -125,7 +129,7 @@
 
         function showTopic(index, imgElement) {
             let topicDisplay = document.getElementById("topicDisplay");
-            topicDisplay.textContent = 🎞️ Topic: ${topics[index]};
+            topicDisplay.textContent = `🎞️ Topic: ${topics[index]}`;
             imgElement.classList.add("used");
         }
     </script>
