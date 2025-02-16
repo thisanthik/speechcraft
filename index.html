@@ -58,16 +58,12 @@
             font-weight: bold;
             color: red;
         }
-        .instruction {
-            color: blue;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🎬 Altrium Speechcraft Program 🎥</h1>
-        <p class="instruction">Click on an image to reveal your topic:</p>
+        <p>Click on an image to reveal your topic:</p>
         <div class="grid">
             <div class="image-container">
                 <span class="image-number">1</span>
@@ -79,4 +75,59 @@
             </div>
             <div class="image-container">
                 <span class="image-number">3</span>
-                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/Best%20Animation%20Movi
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/Best%20Animation%20Movie%20Characters%20(2).jpg" alt="Topic 3" onclick="showTopic(2, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">4</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE%40._V1_FMjpg_UX1000_.jpg" alt="Topic 4" onclick="showTopic(3, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">5</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/b32abb99c53abd81dcc0f0473f2a908d.jpg" alt="Topic 5" onclick="showTopic(4, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">6</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/images%20(1).jpeg" alt="Topic 6" onclick="showTopic(5, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">7</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/images.jpeg" alt="Topic 7" onclick="showTopic(6, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">8</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/moana.jpg" alt="Topic 8" onclick="showTopic(7, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">9</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/rat.jpg" alt="Topic 9" onclick="showTopic(8, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">10</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/Frozen.jpeg" alt="Topic 10" onclick="showTopic(9, this)">
+            </div>
+        </div>
+        <h1 class="topic" id="topicDisplay"></h1>
+    </div>
+
+    <script>
+        const topics = [
+            "Which movie character is most like you?",
+            "A movie that changed you",
+            "Movies vs. real life",
+            "Superheroes: overrated or inspiring?",
+            "The funniest movie ever",
+            "What's a popular movie you don’t like?",
+            "Why villains always lose?",
+            "A movie I can watch 100 times",
+            "Do horror movies actually scare you, or do you find them funny?",
+            "What’s the most unrealistic scene you remember in a movie?"
+        ];
+
+        function showTopic(index, imgElement) {
+            let topicDisplay = document.getElementById("topicDisplay");
+            topicDisplay.textContent = 🎞️ Topic: ${topics[index]};
+            imgElement.classList.add("used");
+        }
+    </script>
+</body>
+</html>
