@@ -27,6 +27,20 @@
             justify-content: center;
             margin-top: 20px;
         }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-number {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #ff4500;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
         .grid img {
             width: 100px;
             height: 100px;
@@ -51,16 +65,46 @@
         <h1>🎬 Altrium Speechcrafter Program 🎥</h1>
         <p>Click on an image to reveal your topic:</p>
         <div class="grid">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/71BtMdFDTGL.jpg" alt="Topic 1" onclick="showTopic(0, this)">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/Alvin%20Superstar.jpeg" alt="Topic 2" onclick="showTopic(1, this)">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/Best%20Animation%20Movie%20Characters%20(2).jpg" alt="Topic 3" onclick="showTopic(2, this)">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE%40._V1_FMjpg_UX1000_.jpg" alt="Topic 4" onclick="showTopic(3, this)">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/b32abb99c53abd81dcc0f0473f2a908d.jpg" alt="Topic 5" onclick="showTopic(4, this)">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/images%20(1).jpeg" alt="Topic 6" onclick="showTopic(5, this)">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/images.jpeg" alt="Topic 7" onclick="showTopic(6, this)">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/moana.jpg" alt="Topic 8" onclick="showTopic(7, this)">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/rat.jpg" alt="Topic 8" onclick="showTopic(7, this)">
-            <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/Frozen.jpeg" alt="Topic 8" onclick="showTopic(7, this)">
+            <div class="image-container">
+                <span class="image-number">1</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/71BtMdFDTGL.jpg" alt="Topic 1" onclick="showTopic(0, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">2</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/Alvin%20Superstar.jpeg" alt="Topic 2" onclick="showTopic(1, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">3</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/Best%20Animation%20Movie%20Characters%20(2).jpg" alt="Topic 3" onclick="showTopic(2, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">4</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE%40._V1_FMjpg_UX1000_.jpg" alt="Topic 4" onclick="showTopic(3, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">5</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/b32abb99c53abd81dcc0f0473f2a908d.jpg" alt="Topic 5" onclick="showTopic(4, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">6</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/images%20(1).jpeg" alt="Topic 6" onclick="showTopic(5, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">7</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/images.jpeg" alt="Topic 7" onclick="showTopic(6, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">8</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/moana.jpg" alt="Topic 8" onclick="showTopic(7, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">9</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/rat.jpg" alt="Topic 9" onclick="showTopic(8, this)">
+            </div>
+            <div class="image-container">
+                <span class="image-number">10</span>
+                <img src="https://raw.githubusercontent.com/thisanthik/speechcraft/main/Frozen.jpeg" alt="Topic 10" onclick="showTopic(9, this)">
+            </div>
         </div>
         <h1 class="topic" id="topicDisplay"></h1>
     </div>
